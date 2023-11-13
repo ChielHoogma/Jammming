@@ -1,0 +1,12 @@
+.Button {
+    height: 3rem;
+    border-radius: 2rem;
+    background-color: #242424;
+    border-color: white;
+    border: #242424;     
+    padding: 0 1.5rem 0 1.5rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    color: white;
+    font-size: 1.5rem;
+} 
