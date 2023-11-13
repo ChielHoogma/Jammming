@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './App.module.css';
 import Searchbar from '../Searchbar/Searchbar';
+import SearchResults from '../SearchResults/SearchResults';
+import Playlist from '../Playlist/Playlist';
 
 function App() {
   return (
@@ -10,6 +12,14 @@ function App() {
       </header>
       <div className={styles.Content}>
         <Searchbar/>
+        <div className={styles.MusicContainer}>
+          <div className={styles.SearchResults}>
+            <SearchResults/>
+          </div>
+          <div className={styles.Playlist}>
+            <Playlist/>
+          </div>
+        </div>
       </div>
     </div>
   );
