@@ -4,9 +4,9 @@
     min-height: 3rem;
     display: flex;
 }
-.Title{
-    margin: 0.5rem 0 0.5rem 0;
-    font-size: 1.5rem;
+
+.Track:hover {
+    background-color: #252525;
 }
 .TrackInfo{
     display: flex;
@@ -17,15 +17,19 @@
     display: flex;
     flex-direction: column;
 }
+.Title{
+    margin: 0.5rem 0 0.5rem 0.5rem;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
 .Album, .Artist{
-    margin-bottom: 0rem;
-    margin-top: 0rem;
+    margin: 0 0 0 0.5rem;
 }
 .ActionButton{
     background: none;
     border: none;
     padding: 0;
-    margin: 0;
+    margin: 0 1rem 0 0;
     font-size: 2rem;
     color: inherit;
     cursor: pointer;    

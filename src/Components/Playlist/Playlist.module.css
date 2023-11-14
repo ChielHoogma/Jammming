@@ -2,6 +2,23 @@
     background-color: rgba(0, 0, 0, 0.2);
     height: 100%;
     padding: 1rem;
-    text-align: left;
+    text-align: center;
     box-sizing: border-box;
+}
+.Input{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 3rem;
+    font-size: 2rem;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    padding: 8px;
+    color: #fff; 
+    background-color: transparent; 
+}
+.Input:hover {
+    background-color: #252525;
 }

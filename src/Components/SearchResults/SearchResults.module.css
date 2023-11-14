@@ -1,11 +1,18 @@
 .Container {
     background-color: rgba(0, 0, 0, 0.2);
     height: 100%;
-    text-align: left;
+    text-align: center;
     padding: 1rem;
     box-sizing: border-box;
 }
 .Title {
-    margin-top: 0;
+    text-align: left;
+    height: 3rem;
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     color: white;
+    border-bottom: 2px solid white;
 }
