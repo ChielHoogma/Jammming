@@ -6,10 +6,11 @@ import Tracklist from "../Tracklist/Tracklist";
 
 function SearchResults(props){
     const results = props.results;
+    
     return (
         <div className={styles.Container}>
             <h2 className={styles.Title}>Results:</h2>
-            <Tracklist trackButtonText="+" tracks={results}/>
+            <Tracklist trackButtonText="+" onButtonClick={props.onPlaylistAdd} tracks={results}/>
         </div>
     );
 }

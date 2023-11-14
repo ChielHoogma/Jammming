@@ -3,6 +3,9 @@ import styles from "./Track.module.css";
 
 function Track(props){
     const track = props.track;
+    const onButtonClick = () =>{
+        props.onButtonClick?.(track);
+    }
     return (
         <div className={styles.Track}>
             <div className={styles.TrackInfo}>
@@ -12,7 +15,7 @@ function Track(props){
                     <p className={styles.Album}>{track.album}</p>
                 </div>
             </div>
-            <button className={styles.ActionButton} onClick={props.onButtonClick}>{props.text}</button>
+            <button className={styles.ActionButton} onClick={onButtonClick}>{props.text}</button>
         </div>
     );
 }

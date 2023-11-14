@@ -18,10 +18,19 @@ function App() {
 },]
   const [results, setResults] = useState(tracks);
   const [playlist, setPlaylist] = useState([]);
-  
-  const addToPlaylist = (track) =>{
 
+  const addToPlaylist = (track) =>{
+  if (!playlist.some(existingTrack => existingTrack.id === track.id)) {
+    setPlaylist(prevArray => [...prevArray, track]);
+  } else {
+    alert("Track already in playlist");
+    //TODO: Propper alert message
   }
+  }
+  const removeFromPlaylist = (track) =>{
+    setPlaylist(playlist.filter(item => item !== track))
+  }
+
   return (
     <div className={styles.App}>
       <header className={styles.Header}>
@@ -31,10 +40,10 @@ function App() {
         <Searchbar/>
         <div className={styles.MusicContainer}>
           <div className={styles.SearchResults}>
-            <SearchResults results={results}/>
+            <SearchResults results={results} onPlaylistAdd={addToPlaylist}/>
           </div>
           <div className={styles.Playlist}>
-            <Playlist playlist={playlist}/>
+            <Playlist playlist={playlist} onPlayListRemove={removeFromPlaylist}/>
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ function Playlist(props){
     return (
         <div className={styles.Container}>
             <input type="text" className={styles.Input} placeholder="New playlist"/>
-            <Tracklist trackButtonText="-" tracks={playlist}/>
+            <Tracklist trackButtonText="-" onButtonClick={props.onPlayListRemove} tracks={playlist}/>
             <Button text="Save to spotify"/>
         </div>
     );
