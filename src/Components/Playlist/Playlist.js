@@ -3,25 +3,12 @@ import styles from './Playlist.module.css';
 import Tracklist from "../Tracklist/Tracklist";
 import Button from "../Button/Button";
 
-const tracks = [{
-    title: "Title",
-    artist: "Artist",
-    album: "Album",
-},{
-    title: "Title",
-    artist: "Artist",
-    album: "Album",
-},{
-    title: "Title",
-    artist: "Artist",
-    album: "Album",
-},];
-
-function Playlist(){
+function Playlist(props){
+    const playlist = props.playlist;
     return (
         <div className={styles.Container}>
             <input type="text" className={styles.Input} placeholder="New playlist"/>
-            <Tracklist trackButtonText="-" tracks={tracks}/>
+            <Tracklist trackButtonText="-" tracks={playlist}/>
             <Button text="Save to spotify"/>
         </div>
     );

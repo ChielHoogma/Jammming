@@ -7,7 +7,7 @@ function Tracklist(props){
     return (
         <div className={styles.Tracklist}>
             {tracks.map((track) => (
-                <Track track={track} text={props.trackButtonText}/>
+                <Track key={track.id} track={track} text={props.trackButtonText}/>
             ))}
         </div>
     );
