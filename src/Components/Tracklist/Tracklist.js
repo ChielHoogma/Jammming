@@ -71,11 +71,11 @@ const tracks = [{
     album: "Album",
 }];
 
-function Tracklist(){
+function Tracklist(props){
     return (
         <div className={styles.Tracklist}>
             {tracks.map((track) => (
-                <Track track={track}/>
+                <Track track={track} text={props.trackButtonText}/>
             ))}
         </div>
     );

@@ -5,11 +5,14 @@ function Track(props){
     const track = props.track;
     return (
         <div className={styles.Track}>
-            <h2 className={styles.Title}>{track.title}</h2>
             <div className={styles.TrackInfo}>
-                <div className={styles.Artist}>{track.artist}</div>
-                <div className={styles.Album}>{track.album}</div>
+                <div className={styles.TrackInfoBody}>
+                    <h2 className={styles.Title}>{track.title}</h2>
+                    <p className={styles.Artist}>{track.artist}</p>
+                    <p className={styles.Album}>{track.album}</p>
+                </div>
             </div>
+            <button className={styles.ActionButton} onClick={props.onButtonClick}>{props.text}</button>
         </div>
     );
 }

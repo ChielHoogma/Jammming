@@ -3,7 +3,6 @@
     border-bottom: 2px solid white;
     min-height: 3rem;
     display: flex;
-    flex-direction: column;
 }
 .Title{
     margin: 0.5rem 0 0.5rem 0;
@@ -11,8 +10,27 @@
 }
 .TrackInfo{
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.TrackInfoBody{
+    display: flex;
     flex-direction: column;
 }
 .Album, .Artist{
-    margin-bottom: 0.3rem;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+}
+.ActionButton{
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+    color: inherit;
+    cursor: pointer;    
+}
+.ActionButton:hover {
+    color: #3498db;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3); 
 }
