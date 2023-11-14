@@ -1,4 +1,7 @@
-.container {
+.Container {
     background-color: rgba(0, 0, 0, 0.2);
-    height: 20rem;
+    height: 100%;
+    padding: 1rem;
+    text-align: left;
+    box-sizing: border-box;
 }

@@ -21,13 +21,15 @@
 }
 
 .Content {
-  margin-top: 2rem;
+  margin: 2rem 0 0 0;
   padding: 0 10% 0 10%;
 }
 
 .MusicContainer {
   display: flex;
   margin-top: 2rem;
+  min-height: 60vh;
+  padding-bottom: 2rem;
 }
 
 .SearchResults {
@@ -38,4 +40,18 @@
 .Playlist {
   flex: 1;
   margin-left: 1rem;
+}
+
+@media only screen and (max-width: 560px) {
+  .MusicContainer{
+      flex-direction: column;
+  }
+  .SearchResults {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  .Playlist {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
 }
