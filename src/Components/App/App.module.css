@@ -42,9 +42,36 @@
   margin-left: 1rem;
 }
 
+.Sidebar {
+  display: none;
+  width: 100%;
+  height: 80%;
+  position: fixed;
+  bottom: -72%; 
+  background-image: linear-gradient(#131518, #242424);
+  color: white;
+  transition: bottom 0.3s ease-in-out;
+  display: block;
+  overflow: scroll;
+}
+
+.SidebarVisible {
+  bottom: 0; 
+}
+
+.SidebarToggle {
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 5%;
+}
+.SidebarPlayList{
+  margin: 5%;
+}
 @media only screen and (max-width: 560px) {
   .MusicContainer{
-      flex-direction: column;
+    flex-direction: column;
   }
   .SearchResults {
     margin-right: 0;
@@ -53,5 +80,9 @@
   .Playlist {
     margin-top: 1rem;
     margin-left: 0;
+  }
+  .Content {
+    margin: 2rem 0 0 0;
+    padding: 0 5% 0 5%;
   }
 }

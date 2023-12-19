@@ -25,16 +25,21 @@
 .Album, .Artist{
     margin: 0 0 0 0.5rem;
 }
-.ActionButton{
+.ActionButton, .MusicButton{
     background: none;
     border: none;
     padding: 0;
     margin: 0 1rem 0 0;
-    font-size: 2rem;
     color: inherit;
     cursor: pointer;    
 }
-.ActionButton:hover {
+.ActionButton:hover, .MusicButton:hover {
     color: #3498db;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3); 
+}
+.ActionButton{
+    font-size: 3rem;
+}
+.MusicButton{
+    font-size: 1.8rem;
 }
